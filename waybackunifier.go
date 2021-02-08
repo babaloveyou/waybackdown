@@ -43,7 +43,7 @@ func main() {
 		go func(snapshot []string) {
 			defer func() { <-lim }()
 			//unifySnapshots(snapshot, subs)
-			fmt.Printf(snapshots)
+			fmt.Printf(snapshot)
 			if err != nil {
 				log.Printf("couldn't unify snapshots: %v", err)
 			}
