@@ -35,7 +35,7 @@ func main() {
 		log.Fatalf("couldn't get snapshots: %v", err)
 		
 	}
-	fmt.Printf("[*] Found %d snapshots", len(snapshots))
+	//fmt.Printf("[*] Found %d snapshots", len(snapshots))
 
 	lim := make(chan bool, *concurrency)
 	for _, snapshot := range snapshots {
