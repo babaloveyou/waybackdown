@@ -43,7 +43,7 @@ func main() {
 		go func(snapshot []string) {
 			defer func() { <-lim }()
 			//unifySnapshots(snapshot, subs)
-			log.Printf("https://web.archive.org/web/%sif_/%s",snapshot[0],snapshot[1])
+			fmt.Println("https://web.archive.org/web/",snapshot[0],"if_/",snapshot[1])
 			if err != nil {
 				log.Printf("couldn't unify snapshots: %v", err)
 			}
