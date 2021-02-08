@@ -31,10 +31,10 @@ func main() {
 	}
 
 	snapshots, err := getSnapshots(*url)
-	if err != nil {
-		log.Fatalf("couldn't get snapshots: %v", err)
+	//if err != nil {
+	//	log.Fatalf("couldn't get snapshots: %v", err)
 		
-	}
+	//}
 	//fmt.Printf("[*] Found %d snapshots", len(snapshots))
 
 	lim := make(chan bool, *concurrency)
