@@ -93,6 +93,7 @@ func unifySnapshots(snapshot []string, subs []string) {
 }
 
 func getSnapshots(url string) ([][]string, error) {
+	fmt.Println("----------")
 	resp, err := http.Get("https://web.archive.org/cdx/search/cdx?url=" + url + "&output=json&fl=timestamp,original&filter=statuscode:200&collapse=digest")
 	if err != nil {
 		return nil, fmt.Errorf("coudln't load waybackmachine search results for %s: %v", url, err)
