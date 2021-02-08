@@ -5,7 +5,7 @@ WaybackUnifier allows you to take a look at how a file has ever looked by aggreg
 ### Installation
 Go is required.
 ```
-go get github.com/mhmdiaa/waybackunifier
+go get github.com/babaloveyou/waybackunifier
 ```
 This will download the code, compile it, and leave a `waybackunifier` binary in $GOPATH/bin.
 
